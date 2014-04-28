@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html class="is-adaptive">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Sample</title>
+
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+
+    <script type="text/javascript" src="libs/common/js/common.js"></script>
+    <script type="text/javascript" src="libs/common/js/useragent.js"></script>
+    <script type="text/javascript" src="libs/common/js/collector.js"></script>
+    <script type="text/javascript" src="libs/common/js/tooltip.js"></script>
+    <script type="text/javascript" src="libs/common/js/select.js"></script>
+
+    <script type="text/javascript">
+        cm.onload(function(){
+            // Useragent
+            Com.UA.setBrowserClass();
+            // Components
+            new Com.Collector()
+                    .add('select', function(node){
+                        new Com.Select({
+                            'select' : node,
+                            'icons' : {
+                                'arrow' : 'icon tpl-icon small select linked'
+                            }
+                        });
+                    })
+                    .construct();
+        });
+    </script>
+</head>
+
+<body class="has-header has-aside has-footer">
+
+<!-- [* ******* SIDEBAR START ******* *] -->
+
+<aside>
+    <nav>
+        <ul>
+            <li>
+                <a class="icon tpl-icon aside media">СМИ</a>
+            </li>
+            <li>
+                <a class="icon tpl-icon aside social-media">Соц. МЕДИА</a>
+            </li>
+            <li>
+                <a class="icon tpl-icon aside treatment">Обращения</a>
+            </li>
+            <li>
+                <a class="icon tpl-icon aside sociology">Социология</a>
+            </li>
+            <li>
+                <a class="icon tpl-icon aside economy">Экономика</a>
+            </li>
+        </ul>
+    </nav>
+</aside>
+
+<!-- [* ******* SIDEBAR END ******* *] -->
+
+<!-- [* ******* HEADER START ******* *] -->
+
+<header>
+    <div class="three-columnar clear">
+        <div class="descr">
+            <div class="col">
+                <div class="form-field has-icon-right">
+                    <input type="text" placeholder="За период">
+                    <div class="icon tpl-icon small datepicker linked"></div>
+                </div>
+            </div>
+
+            <div class="col">
+                <select data-element="select">
+                    <option>Тема</option>
+                    <option>Тема 2</option>
+                    <option>Тема 3</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <div class="button">
+                    <span class="icon tpl-icon small marker inline"></span>ВЫБРАТЬ РАЙОН
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- [* ******* HEADER END ******* *] -->
+
+<!-- [* ******* CONTENT START ******* *] -->
+
+<main>
+    <div class="inner">
+        <div class="content-line">
+            <div class="three-columnar is-stats clear">
+                <div class="title">
+                    <div class="content-line-stats"></div>
+                </div>
+
+                <div class="descr">
+                    <div class="col">
+                        <div class="content-line-box is-transparent has-title">
+                            <div class="title">
+                                <div class="r">
+                                    <a>ПОСМОТРЕТЬ ВСЕ</a>
+                                </div>
+                                <div class="l">Районы</div>
+                            </div>
+
+                            <div class="descr">
+                                <div class="tpl-counters">
+                                    <ul>
+                                        <li class="clear">
+                                            <div class="r">1 247</div>
+                                            <div class="l">Дзержинский городской округ</div>
+                                        </li>
+                                        <li class="clear">
+                                            <div class="r">609</div>
+                                            <div class="l">Клинский муниципальный район</div>
+                                        </li>
+                                        <li class="clear">
+                                            <div class="r">402</div>
+                                            <div class="l">Ногинский район</div>
+                                        </li>
+                                        <li class="clear">
+                                            <div class="r">109</div>
+                                            <div class="l">Домодедовский муниципальный район</div>
+                                        </li>
+                                        <li class="clear">
+                                            <div class="r">77</div>
+                                            <div class="l">Дмитровский район</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="content-line-box has-title">
+                            <div class="title">График 1</div>
+
+                            <div class="descr">
+                                <div class="graph">
+                                    <img src="img/samples/gr1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="content-line-box has-title">
+                            <div class="title">График 2</div>
+
+                            <div class="descr">
+                                <div class="graph">
+                                    <img src="img/samples/gr2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-line">
+            <div class="three-columnar clear">
+                <div class="title">
+                    <div class="content-line-day">11</div>
+                    <div class="content-line-month">ФЕВ</div>
+                </div>
+
+                <div class="descr">
+                    <div class="col">
+                        <div class="content-line-box-title">Медицина</div>
+                        <div class="content-line-box has-image">
+                            <div class="image">
+                                <img src="img/samples/1.jpg" alt="">
+                            </div>
+                            <div class="inner">
+                                <h3>Кандидат в мэры москвы Н.Левичев собрал необходимые</h3>
+                                <div class="tpl-map-marker">
+                                    Дмитровский район<span class="icon tpl-icon x-small marker inline"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="content-line-box-title">Социальная политика</div>
+                        <div class="content-line-box">
+                            <div class="inner">
+                                <h3>Областная полиция заподозрила крупного импортера мяса и рыбы в уклонении от уплаты 46 млн руб пошлин</h3>
+                                <div class="tpl-map-marker">
+                                    Щелковский район<span class="icon tpl-icon x-small marker inline"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="content-line-box-title">Правовые отношения</div>
+                        <div class="content-line-box">
+                            <div class="inner">
+                                <h3>Национальная медицинская палата и Немецкая врачебная палата подписали соглашение о сотрудничестве</h3>
+                                <div class="tpl-map-marker">
+                                    Ногинский район<span class="icon tpl-icon x-small marker inline"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-line">
+            <div class="three-columnar clear">
+                <div class="title">
+                    <div class="content-line-day">10</div>
+                    <div class="content-line-month">ФЕВ</div>
+                </div>
+
+                <div class="descr">
+                    <div class="col">
+                        <div class="content-line-box-title">Социальная политика</div>
+                        <div class="content-line-box">
+                            <div class="inner">
+                                <h3>Областная полиция заподозрила крупного импортера мяса и рыбы в уклонении от уплаты 46 млн руб пошлин</h3>
+                                <div class="tpl-map-marker">
+                                    Щелковский район<span class="icon tpl-icon x-small marker inline"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="content-line-box-title">Правовые отношения</div>
+                        <div class="content-line-box has-image">
+                            <div class="image">
+                                <img src="img/samples/2.jpg" alt="">
+                            </div>
+                            <div class="inner">
+                                <h3>Национальная медицинская палата и Немецкая врачебная</h3>
+                                <div class="tpl-map-marker">
+                                    Ногинский район<span class="icon tpl-icon x-small marker inline"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="content-line-box-title">Медицина</div>
+                        <div class="content-line-box">
+                            <div class="inner">
+                                <h3>Кандидат в мэры москвы Н.Левичев собрал необходимые подписи муниципальных депутатов</h3>
+                                <div class="tpl-map-marker">
+                                    Дмитровский район<span class="icon tpl-icon x-small marker inline"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- [* ******* CONTENT END ******* *] -->
+
+<!-- [* ******* FOOTER START ******* *] -->
+
+<footer>
+    <div class="banners">
+        <ul>
+            <li>
+                <a class="icon tpl-icon banner mlg"></a>
+            </li>
+            <li>
+                <a class="icon tpl-icon banner wciom"></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<!-- [* ******* FOOTER END ******* *] -->
+
+</body>
+</html>
